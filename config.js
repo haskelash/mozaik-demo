@@ -28,6 +28,9 @@ var config = {
                 user:     'me',
                 password: 'me'
             }
+        },
+        gitlab: {
+            token: ''
         }
     },
 
@@ -72,7 +75,8 @@ var config = {
                     x: 1, y: 1
                 },
                 {
-                    type: 'time.clock',
+                    type: 'gitlab.merge_requests_gauge',
+                    project: 'gitlab-org/gitlab-ce',
                     columns: 1, rows: 1,
                     x: 3, y: 0
                 },
